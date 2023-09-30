@@ -1,0 +1,16 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  height: 4.9375rem;
+
+  input {
+    height: 3rem;
+
+    padding-left: 1rem;
+
+    background-color: var(--grey-1);
+    border-radius: var(--radius);
+  }
+}

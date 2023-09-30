@@ -1,0 +1,61 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+
+  height: 5rem;
+
+  background-color: var(--grey-1);
+
+  padding: 0 1rem;
+
+  &.credit {
+    box-shadow: -0.375rem 0 0 var(--color-secondary);
+    border-radius: 0.125rem;
+  }
+
+  .typeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0.5rem 0;
+
+    width: 21.0625rem;
+  }
+
+  .valueDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.8rem 0;
+
+    width: 80px;
+
+    .delete {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      padding-inline: 0.5rem;
+
+      height: 1.5rem;
+
+      font-weight: 400;
+      line-height: 0.8525rem;
+      font-size: var(--title5);
+
+      background-color: var(--grey-2);
+      color: var(--grey-4);
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .list {
+    height: 7.75rem;
+  }
+}

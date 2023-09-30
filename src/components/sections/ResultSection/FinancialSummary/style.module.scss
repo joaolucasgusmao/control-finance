@@ -1,0 +1,30 @@
+.div {
+  width: 560px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    font-weight: 700;
+    font-size: var(--title2);
+    line-height: 2.125rem;
+
+    color: #343a40;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .div {
+    width: 21.1875rem;
+    margin-bottom: 2rem;
+  }
+}

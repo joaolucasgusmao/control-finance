@@ -1,0 +1,16 @@
+.div {
+  height: 79px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  select {
+    height: 3rem;
+
+    background-color: var(--grey-1);
+    border-radius: var(--radius);
+    border: none;
+    outline: none;
+  }
+}

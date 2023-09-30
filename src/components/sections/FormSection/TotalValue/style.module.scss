@@ -1,0 +1,19 @@
+.container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border: 1px solid var(--grey-2);
+  
+  width: 22.1875rem;
+  height: 96px;
+  
+  padding: 0 1rem;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 21.1875rem;
+  }
+}
