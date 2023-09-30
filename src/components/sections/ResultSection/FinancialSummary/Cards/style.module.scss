@@ -49,6 +49,8 @@
       background-color: var(--grey-2);
       color: var(--grey-4);
 
+      border-radius: var(--radius);
+
       cursor: pointer;
     }
   }
@@ -57,5 +59,13 @@
 @media (max-width: 425px) {
   .list {
     height: 7.75rem;
+
+    .typeDiv {
+      padding: 1.5rem 0;
+    }
+
+    .valueDiv {
+      padding: 1.7rem 0;
+    }
   }
 }
