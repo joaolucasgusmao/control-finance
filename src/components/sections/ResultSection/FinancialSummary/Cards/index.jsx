@@ -18,7 +18,7 @@ export const Cards = ({
       className={
         type === "Entrada"
           ? `${styles.list} ${styles.credit}`
-          : `${styles.list}`
+          : `${styles.list} ${styles.debit}`
       }
     >
       <div className={styles.typeDiv}>

@@ -13,4 +13,8 @@
     background-color: var(--grey-1);
     border-radius: var(--radius);
   }
+
+  input::placeholder {
+    color: var(--grey-5)
+  }
 }

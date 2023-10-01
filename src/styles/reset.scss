@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background);
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -15,7 +19,7 @@ ol {
   list-style: none;
 }
 
-input {
+input, select {
   border: none;
   outline: none;
 }

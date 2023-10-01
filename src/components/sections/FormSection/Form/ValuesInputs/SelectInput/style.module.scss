@@ -8,9 +8,12 @@
   select {
     height: 3rem;
 
+    font-size: var(--title5);
+
+    color: var(--grey-5);
     background-color: var(--grey-1);
     border-radius: var(--radius);
-    border: none;
-    outline: none;
+
+    cursor: pointer;
   }
 }

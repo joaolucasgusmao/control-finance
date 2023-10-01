@@ -3,8 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: var(--box);
   
-  border: 1px solid var(--grey-2);
+  border: 0.0625rem solid var(--grey-2);
   
   width: 22.1875rem;
   height: 96px;

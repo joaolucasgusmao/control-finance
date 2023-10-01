@@ -3,10 +3,17 @@
   --color-primary-2: #e34981;
   --color-secondary: #03b898;
 
+  --grey-5: #343a40;
   --grey-4: #212529;
   --grey-3: #868e96;
   --grey-2: #e9ecef;
   --grey-1: #f8f9fa;
+
+  --btn: #f8f9fa;
+  --background: #ffffff;
+  --box: #fdfdfd;
+
+  --box-shadow: rgba(0, 0, 0, 0.1);
 
   --radius: 0.5rem;
 
@@ -17,4 +24,18 @@
   --title3: 1rem;
   --title4: 0.9375rem;
   --title5: 0.8125rem;
+}
+
+.dark-mode:root {
+  --grey-1: #242731;
+  --grey-2: #2b2f33;
+  --grey-3: #c9d4dc;
+  --grey-4: #a1abba;
+  --grey-5: #afb3c1;
+
+  --btn: #f8f9fa;
+  --background: #17191e;
+  --box: #1a1c23;
+
+  --box-shadow: rgba(0, 0, 0, 1);
 }

@@ -3,9 +3,11 @@
   align-items: center;
   justify-content: center;
 
+  background-color: var(--box);
+
   width: 22.1875rem;
   height: 28.125rem;
-  border: 1px solid var(--grey-2);
+  border: 0.0625rem solid var(--grey-2);
 
   form {
     width: 19.6563rem;

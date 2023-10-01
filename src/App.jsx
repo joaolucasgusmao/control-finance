@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
+
   const notifySuccess = () => {
     toast.success("Valor adicionado com sucesso!");
   };
