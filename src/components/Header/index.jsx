@@ -24,7 +24,7 @@ export const Header = () => {
 
   const submit = () => {
     handleDarkMode();
-    changeImg()
+    changeImg();
   };
 
   return (
