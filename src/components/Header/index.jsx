@@ -4,7 +4,7 @@ import logoDark from "../../assets/logoDark.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useEffect } from "react";
-import { ThemeContext } from "../../Providers/ThemeContext";
+import { ThemeContext } from "../../providers/ThemeContext";
 
 export const Header = () => {
   const { light, setLight } = useContext(ThemeContext);

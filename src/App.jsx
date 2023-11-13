@@ -6,7 +6,7 @@ import { ResultSection } from "./components/sections/ResultSection";
 import "./styles/index.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ThemeContext } from "./Providers/ThemeContext";
+import { ThemeContext } from "./providers/ThemeContext";
 
 const App = () => {
   const { light } = useContext(ThemeContext);
