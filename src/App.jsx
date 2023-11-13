@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { FormSection } from "./components/sections/FormSection";
@@ -6,8 +6,12 @@ import { ResultSection } from "./components/sections/ResultSection";
 import "./styles/index.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ThemeContext } from "./Providers/ThemeContext";
 
 const App = () => {
+  const { light } = useContext(ThemeContext);
+  const [listValues, setListValues] = useState([]);
+
   const notifySuccess = () => {
     toast.success("Valor adicionado com sucesso!");
   };
@@ -19,8 +23,6 @@ const App = () => {
   const notifyRemove = () => {
     toast.success("Valor removido com sucesso!");
   };
-
-  const [listValues, setListValues] = useState([]);
 
   const addValue = (description, value, type) => {
     const id = crypto.randomUUID();
@@ -47,7 +49,7 @@ const App = () => {
 
   return (
     <>
-      <ToastContainer autoClose={1000} />
+      <ToastContainer autoClose={1000} theme={light ? "light" : "dark"} />
       <Header />
       <Main>
         <FormSection

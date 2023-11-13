@@ -3,10 +3,11 @@ import logoLight from "../../assets/logoLight.svg";
 import logoDark from "../../assets/logoDark.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "../../Providers/ThemeContext";
 
 export const Header = () => {
-  const [light, setLight] = useState(true);
+  const { light, setLight } = useContext(ThemeContext);
   const html = document.querySelector("html");
 
   const handleDarkMode = () => {
