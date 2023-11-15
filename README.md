@@ -1,5 +1,5 @@
 ### Nu Kenzie
-Nu Kenzie é uma aplicação de gerenciamento de despesas que permite aos usuários registrar suas receitas e despesas.</br> Além disso, oferece a flexibilidade de adicionar e remover entradas. O valor total é automaticamente calculado com base</br> nos dados inseridos pelo usuário, proporcionando uma visão clara e organizada das finanças.
+Nu Kenzie é uma aplicação de gerenciamento de despesas que permite aos usuários registrar suas receitas e despesas.</br> Além disso, oferece a flexibilidade de adicionar e remover entradas. O valor total é automaticamente calculado com base nos dados inseridos pelo usuário, proporcionando uma visão clara e organizada das finanças.
 <hr>
 
 #### Funcionalidades: 
