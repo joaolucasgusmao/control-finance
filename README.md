@@ -1,8 +1,16 @@
-# React + Vite
+### Nu Kenzie
+Nu Kenzie é uma aplicação de gerenciamento de despesas que permite aos usuários registrar suas receitas e despesas.</br> Além disso, oferece a flexibilidade de adicionar e remover entradas. O valor total é automaticamente calculado com base</br> nos dados inseridos pelo usuário, proporcionando uma visão clara e organizada das finanças.
+<hr>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Funcionalidades: 
+- Cadastro de Entradas e Despesas: Os usuários podem registrar suas receitas e despesas na aplicação.
+- Remoção de Entradas e Despesas: Funcionalidade que permite aos usuários remover entradas e despesas conforme necessário.
+- Cálculo Automático: O sistema calcula automaticamente o valor total com base nas entradas e despesas inseridas pelo usuário.
+- Dark Mode: A aplicação oferece suporte ao dark mode, proporcionando uma alternativa visual amigável para os usuários.
+<hr>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Tecnologias utilizadas no desenvolvimento:
+- React JS
+- React Toastify
+- React Icons
+- SASS
