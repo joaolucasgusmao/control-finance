@@ -8,6 +8,19 @@
 
   box-shadow: 0 0.375rem 0.625rem var(--box-shadow);
 
+  .logo {
+    color: #fd377f;
+    font-size: 1.6rem;
+
+    .finance {
+      color: #000000;
+    }
+
+    .financeDark {
+      color: #ffffff;
+    }
+  }
+
   .btn {
     display: inline-flex;
     align-items: center;

@@ -3,11 +3,13 @@ import logoLight from "../../assets/logoLight.svg";
 import logoDark from "../../assets/logoDark.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../providers/ThemeContext";
 
 export const Header = () => {
   const { light, setLight } = useContext(ThemeContext);
+  const [logoClass, setLogoClass] = useState(styles.finance);
+
   const html = document.querySelector("html");
 
   const handleDarkMode = () => {
@@ -15,21 +17,22 @@ export const Header = () => {
     setLight(!light);
   };
 
-  const changeImg = () => {
-    const img = document.querySelector("img");
-    img.src = light ? logoDark : logoLight;
+  const changeLogo = () => {
+    setLogoClass((prev) =>
+      prev === styles.finance ? styles.financeDark : styles.finance
+    );
   };
 
   const submit = () => {
     handleDarkMode();
-    changeImg();
+    changeLogo();
   };
 
   useEffect(() => {
     const userPreference = localStorage.getItem("@DarkMode");
     if (userPreference === "true") {
       handleDarkMode();
-      changeImg();
+      setLogoClass(styles.financeDark);
     }
   }, []);
 
@@ -43,7 +46,9 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <img src={logoLight} alt="Logo" />
+      <h1 className={styles.logo}>
+        Control <span className={logoClass}>Finance</span>
+      </h1>
       <button onClick={submit} className={styles.btn}>
         <FontAwesomeIcon icon={light ? faMoon : faSun} />
       </button>
