@@ -8,7 +8,7 @@ import { ThemeContext } from "../../providers/ThemeContext";
 
 export const Header = () => {
   const { light, setLight } = useContext(ThemeContext);
-  const [logoClass, setLogoClass] = useState(styles.finance);
+  const [logoClass, setLogoClass] = useState(styles.financeLight);
 
   const html = document.querySelector("html");
 
@@ -19,7 +19,7 @@ export const Header = () => {
 
   const changeLogo = () => {
     setLogoClass((prev) =>
-      prev === styles.finance ? styles.financeDark : styles.finance
+      prev === styles.financeLight ? styles.financeDark : styles.financeLight
     );
   };
 
